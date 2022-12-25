@@ -10,12 +10,12 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
-public class СheckAnswerTextIsEnabledOnClick {
+public class CheckAnswerTextIsEnabledOnClick {
     int num;
     String question;
     String answer;
 
-    public СheckAnswerTextIsEnabledOnClick(int num, String question, String answer) {
+    public CheckAnswerTextIsEnabledOnClick(int num, String question, String answer) {
         this.num = num;
         this.question = question;
         this.answer = answer;
@@ -43,7 +43,8 @@ public class СheckAnswerTextIsEnabledOnClick {
         };
     }
 
-    // в формулировке задачи "когда нажимаешь на стрелочку, открывается соответствующий текст" - достаточно ёмкая проверка
+    // в формулировке задачи "когда нажимаешь на стрелочку, открывается соответствующий текст" - достаточно ёмкая проверка,
+    // поэтому сделала лучше больше, чем меньше
     // несколько проверок в один тест - плохо, но в данном случае показалось разделять не целесообразно
     @Test
     public void answerTextIsEnabledOnClick() {
